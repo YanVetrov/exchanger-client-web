@@ -1,0 +1,31 @@
+
+.our-partner {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .title {
+    font-size: 1.875rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  li {
+    align-self: center;
+    min-width: 200px;
+    padding: 10px 15px;
+    margin: 10px;
+    flex: 1 1;
+  }
+
+  img {
+    max-width: 175px;
+  }
+
+}

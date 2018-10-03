@@ -1,0 +1,132 @@
+
+.form {
+  &-manual {
+
+    .form-information-sent-received-wr {
+      padding: 1.0rem .94rem;
+      margin-bottom: 0;
+    }
+    .form-information-sent-received_info {
+      .title {
+        span {
+          font-size: 1.55rem;
+
+          @include respond-to(phone) {
+            margin-left: 10px;
+          }
+
+        }
+      }
+    }
+
+    .form-information-sent-received_img {
+      img {
+        max-width: 70px;
+      }
+    }
+
+    .form-information_contact {
+
+      justify-content: center;
+      margin-bottom: 0rem;
+
+      .contact {
+        margin: .88rem 2.4rem;
+
+        @include respond-to(phone) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      ul {
+        margin: 0;
+      }
+
+    }
+
+    &-must {
+
+      .title {
+        font-size: 22px;
+      }
+
+      ol {
+        margin: 0 -0.875rem 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        counter-reset: list;
+
+        @include respond-to(tablet-lend) {
+          display: block;
+        }
+      }
+
+      li {
+
+        border: 1px solid #e6e6e6;
+        margin:  2.0em 0.875rem 0.875rem;
+        padding: 1rem .94rem;
+        flex: 1 1;
+        position: relative;
+
+          &::before {
+            counter-increment: list;
+            content: counter(list);
+
+            font-size: 18px;
+            font-weight: 900;
+            position: absolute;
+            top: -20px;
+            width: 40px;
+            height: 19px;
+            line-height: 35px;
+            border: 1px solid #e6e6e6;
+            border-radius: 20px 20px 0 0/20px 20px 0 0;
+            border-bottom: transparent;
+            background: #ffffff;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+            z-index: 2;
+
+          }
+
+      }
+
+      .btn {
+        margin-top: 10px;
+
+          img {
+            margin: 0 15px 0 0;
+          }
+      }
+
+      &_txt {
+        font-size: 1.3rem;
+        margin-top: 1.3rem;
+        font-family: $ffMuseoSansCyrl_2;
+      }
+
+    }
+
+    .btn-plain {
+
+      position: absolute;
+      right: 0;
+      margin-top: .5rem;
+
+
+      @include respond-to(phone) {
+        position: relative;
+        margin-top: 1.5rem;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,62 @@
+/*================*/
+//form general
+.form {
+  background: #ffffff;
+  border-radius: 30px;
+  width: 90%;
+  margin: 0 auto 3.75em;
+  overflow: hidden;
+
+  -webkit-box-shadow: 0 25px 50px 0 rgba(23, 22, 37, 0.15);
+  -moz-box-shadow: 0 25px 50px 0 rgba(23, 22, 37, 0.15);
+  box-shadow: 0 25px 50px 0 rgba(23, 22, 37, 0.15);
+
+    &-wr {
+      padding: 1.53em 1.8em 0;
+    }
+
+    &-container-padding {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    &-ruls {
+      background: $bacTxt;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      p {
+        font-size: 15px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    &-attention {
+        background: $bacTxt;
+        text-align: center;
+        padding: 14px 30px;
+        color: #9f9f9f;
+        font-size: 12px;
+        border-radius: 12px;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    &-submit {
+      margin-top: 0;
+      margin-bottom: 1.5em;
+      position: relative;
+    }
+
+
+}
+//end form general
+
+/*================================================================================*/

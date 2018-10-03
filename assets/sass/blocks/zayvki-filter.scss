@@ -1,0 +1,36 @@
+
+.zayvki-filter {
+
+  margin: 2.5rem 0 .5rem;
+
+  &--top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__btn-group {
+
+      .btn {
+        line-height: 2.72727;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin: 10px 5px;
+      }
+
+    }
+  }
+
+  &--bot {
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include respond-to(phone) {
+      margin: 0 10px;
+    }
+  }
+}

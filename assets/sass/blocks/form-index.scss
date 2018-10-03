@@ -1,0 +1,120 @@
+/*================*/
+
+//form for index page
+
+.form {
+
+  &-index {
+
+    img {
+      width: 50px;
+    }
+
+    select, input {
+      background: transparent;
+      font-family: $ffMuseoSansCyrl_0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 14px;
+        padding: 0 15px;
+        cursor: pointer;
+        font-family: $ffMuseoSansCyrl_2;
+      }
+
+    }
+
+    .container {
+
+      >p {
+        color: #ffffff;
+        font-size: 1.5em;
+        margin-top: .5rem;
+        padding-bottom: 1.25rem;
+      }
+
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: .6em;
+
+    }
+
+    &-item {
+
+      flex: 1 0;
+
+      @include respond-to(tablet-lend) {
+        width: 100%;
+        flex: 1 1 auto;
+      }
+
+      >p {
+        font-size: 1.0em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+
+      p {
+        cursor: pointer;
+      }
+
+      .form-index-bloc {
+        flex: 1 0;
+        margin: 20px 15px;
+      }
+    }
+
+    &-bloc {
+      margin: 25px 0;
+      min-width: 320px;
+
+      @include respond-to(tablet) {
+        min-width: 100%;
+      }
+
+      &-item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+
+      p {
+        color: #9f9f9f;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+
+  &-exchange {
+    flex: .3 0;
+    min-width: 135px;
+    margin: auto;
+  }
+
+}
+//end form for index page
+/*================*/
+
+//form for confirmation page
+
+//end form for confirmation page
+
+/*================*/

@@ -1,0 +1,70 @@
+
+.footer {
+
+  &-support {
+    padding-top: 1.5em;
+    padding-bottom: 2.85em;
+    color: #fff;
+    margin-top: 2rem;
+
+    background-image: url("../img/bg_2.svg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    h4 {
+      font-size: 1.875em;
+    }
+
+    span {
+      color: #9f9f9f;
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 1.125em;
+    }
+
+    p {
+      font-size: 1.125em;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+
+      >div {
+
+        &:first-child {
+          flex: .72 0;
+          border-right: 1px solid #433a6d;
+          padding-right: 5em;
+
+          @include respond-to(phone) {
+            padding: 0 15px;
+            border-right: none;
+            border-bottom: 1px solid #433a6d;
+          }
+        }
+
+        &:last-child {
+          flex: 1 0;
+          padding-left: 5em;
+
+          @include respond-to(phone) {
+            padding: 0 15px;
+          }
+        }
+      }
+
+    }
+
+    .btn-submit {
+      margin-top: 20px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+}

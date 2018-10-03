@@ -1,0 +1,277 @@
+
+.partners-program, .requisites-main-block {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .94rem -1.875rem;
+
+    @include respond-to(phone) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  li {
+    flex: 1 0 auto;
+    @include col(3.6,12,320,1.875,.45, .45, .94, .94);
+    border: 1px solid #e6e6e6;
+
+    @include respond-to(phone) {
+      min-width: 300px;
+    }
+
+    div >div {
+      margin-top: 1.25rem;
+
+        p {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 10px;
+          border-top: 1px dashed #e6e6e6;
+
+            &:last-child {
+              border-bottom: 1px dashed #e6e6e6;
+            }
+        }
+    }
+  }
+
+  &-title {
+    color: #9f9f9f;
+    font-size: 14px;
+    margin-bottom: 1.875rem;
+    text-transform: uppercase;
+  }
+
+  &-cost {
+    font-size: 2.875rem;
+    font-weight: 600;
+    margin-bottom: 1.875rem;
+      span {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+  }
+
+  .btn-submit {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+.personal-room {
+  margin-top: 3rem;
+
+  &-top {
+    &-wr {
+      background-position-y: -.5rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 2.1875rem;
+  }
+}
+
+.ref-link {
+
+  background: #f4f5f7;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+
+  &::after, &::before {
+    position: absolute;
+    z-index: 0;
+    opacity: .1;
+  }
+
+  &::after {
+    content: url("../img/001.svg");
+    top: -5.8rem;
+    right: -16rem;
+    width: 50rem;
+  }
+
+  &::before {
+    content: url("../img/002.svg");
+    bottom: -15.5rem;
+    left: -12rem;
+    width: 46rem;
+  }
+
+
+  input {
+    margin: 10px 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 35px 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    background-color: #f4f5f7;
+  }
+
+  .form {
+    padding: 3em;
+    background: #ffffff;
+
+    @include respond-to(phone) {
+      padding: 0 1rem 1rem;
+    }
+
+    .title {
+      margin-bottom: .5rem;
+    }
+
+      >div {
+        margin-top: 2.5rem;
+
+        p {
+          font-size: 1.5rem;
+          margin: 0 0 15px;
+        }
+      }
+
+    label {
+      width: 70%;
+      margin: auto;
+      position: relative;
+      display: block;
+
+      @include respond-to(phone) {
+        width: 100%;
+      }
+
+      span {
+        position: absolute;
+        right: 10px;
+        top: 19px;
+        cursor: pointer;
+
+          img {
+            width: 20px;
+          }
+      }
+    }
+  }
+
+}
+
+.statistic {
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &-ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: .94rem -1.875rem;
+
+    @include respond-to(phone) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    >li {
+      flex: 1 1;
+      @include col(5.55,12,320,1.875,.45, .45, .94, .94);
+
+        &.statistic-get-li {
+          padding: 0;
+        }
+
+      @include respond-to(phone) {
+        min-width: 300px;
+      }
+    }
+  }
+
+  &-graphic {
+    border: 1px solid #e6e6e6;
+  }
+
+  b {
+    font-family: $ffMuseoSansCyrl_2;
+  }
+
+  &-get {
+
+
+    &-title {
+      background: #f4f5f7;
+      padding: 1.25rem 1.875rem;
+
+      >span, >b {
+        font-size: 1.5rem;
+      }
+
+    }
+
+    &-li {
+
+      li {
+        padding: 10px 1.25rem;
+        border-bottom: 1px solid #e6e6e6;
+        justify-content: space-between;
+
+        p {
+          font-size: 1.25rem;
+        }
+
+        img {
+          max-width: 30px;
+          margin-right: 1.25rem;
+        }
+
+        >div {
+
+          b {
+            font-size: 1.125rem;
+            margin-right: 1.875rem;
+          }
+          span {
+            color: #b2adad;
+            font-size: 14px;
+          }
+
+        }
+      }
+
+
+      li, li div {
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+
+    }
+  }
+
+  &-history {
+    
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    
+    a {
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-size: 11px;
+      color: #9f9f9f;
+    }
+  }
+}

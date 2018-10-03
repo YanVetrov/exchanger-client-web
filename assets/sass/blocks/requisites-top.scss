@@ -1,0 +1,30 @@
+
+.requisites-bg {
+
+  @include respond-to(tablet-lend) {
+    background-position-y: 0;
+  }
+
+}
+
+.requisites--top {
+
+  margin: 2.5rem 0 2.125rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+
+    &__btn-group {
+
+      .btn {
+        line-height: 2.72727;
+        text-transform: uppercase;
+        font-size: 11px;
+        margin: 10px 5px;
+      }
+
+    }
+
+}

@@ -1,0 +1,11 @@
+
+.languages {
+  a {
+    text-transform: uppercase;
+    font-family: $ffMuseoSansCyrl_2;
+
+    &:hover {
+      color: #1ac1de;
+    }
+  }
+}

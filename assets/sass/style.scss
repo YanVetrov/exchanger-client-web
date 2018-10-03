@@ -1,0 +1,55 @@
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/fonts";
+@import "utils/button";
+
+* {
+    box-sizing: border-box;
+    outline:none;
+}
+
+@import "blocks/course";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/user-bloc";
+@import "blocks/profile-nav-faq";
+@import "blocks/profile";
+@import "blocks/logo-sign";
+@import "blocks/language";
+@import "blocks/under-header";
+@import "blocks/about-us";
+@import "blocks/form";
+@import "blocks/form-index";
+@import "blocks/services";
+@import "blocks/confirmation-manual";
+@import "blocks/form-information";
+@import "blocks/form-manual";
+@import "blocks/form_reviews-new";
+@import "blocks/our-partner";
+@import "blocks/partner";
+@import "blocks/personal-room--requisites-main-block";
+@import "blocks/reserves-news-reviws";
+@import "blocks/reserves";
+@import "blocks/form-footer";
+@import "blocks/content";
+@import "blocks/verification";
+@import "blocks/reviews";
+@import "blocks/one-new";
+@import "blocks/transaction";
+@import "blocks/specification";
+@import "blocks/faq";
+@import "blocks/pagination";
+@import "blocks/footer";
+@import "blocks/contact";
+@import "blocks/form-contact-main";
+@import "blocks/four";
+@import "blocks/zayvki-filter";
+@import "blocks/zayvki-table";
+@import "blocks/requisites-top";
+@import "blocks/requisites-main-block";
+@import "blocks/requisites-select-block";
+@import "blocks/footer-support";
+@import "blocks/popups";
+@import "blocks/popup-social-links";

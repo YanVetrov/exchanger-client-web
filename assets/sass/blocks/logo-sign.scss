@@ -1,0 +1,42 @@
+
+
+.logo-sign {
+  border-bottom: 1px solid #38336c;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond-to(phone) {
+      justify-content: center;
+    }
+  }
+
+}
+
+.registration {
+
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+  }
+
+  li {
+    margin: 5px 15px;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-family: $ffMuseoSansCyrl_2;
+    color: #ffffff;
+    font-size: 12px;
+  }
+
+}

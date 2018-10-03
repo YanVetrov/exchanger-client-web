@@ -1,0 +1,46 @@
+
+.services {
+
+  @include respond-to(phone) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 -1.5rem;
+    flex-wrap: wrap;
+
+    @include respond-to(phone) {
+      margin: 0;
+    }
+  }
+  li {
+    @include col(3.5,12,320,1,2, 2, 1.5, 1.5);
+  }
+
+  img {
+    max-width: 80px;
+    width: 100%;
+  }
+
+  span {
+    display: inline-block;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 1.25rem;
+    margin: auto;
+  }
+
+  p {
+    text-transform: uppercase;
+    line-height: 1.88;
+    font-size: 1rem;
+    margin-top: 1.875rem;
+    margin-bottom: .3rem;
+  }
+
+  &-txt {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
